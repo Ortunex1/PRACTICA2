@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/inscripcion">Inscripción en curso</a></li>
+            <li><a href="/registro_usuarios">Registro de usuarios</a></li>
+            <li><a href="/registro_productos">Registro de productos</a></li>
+            <li><a href="/registro_libros">Registro de libros</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
